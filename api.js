@@ -4,6 +4,8 @@ setTimeout(function addTeam() {
     const team = document.createElement('li');
     team.textContent = teamsFootball[parseInt(Math.random() * teamsFootball.length, 10)];
     teams.appendChild(team);
+    //Add class
+    teams.classList.add('newClass');
 }, Math.random() * 1000);
 
 setTimeout(function removeTeam() {

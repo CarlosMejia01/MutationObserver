@@ -8,6 +8,7 @@ const observer = new MutationObserver((mutationList) => {
         if(mutation.removedNodes.length) {
             console.log('Removed element', mutation.removedNodes[0]);
         }
+        console.log(mutation.type)
     });
 });
 
